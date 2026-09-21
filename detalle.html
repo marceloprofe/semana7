@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle de la película · Cine Horizonte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Cine CERP</a>
+      <a class="btn btn-outline-light btn-sm" href="index.html">Volver a la cartelera</a>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section id="detalle" class="card border-0 shadow overflow-hidden d-none">
+      <div class="row g-0">
+        <div class="col-lg-5 bg-dark">
+          <img id="imagen" class="imagen-detalle" src="" alt="">
+        </div>
+        <div class="col-lg-7">
+          <div class="card-body p-4 p-lg-5">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span id="genero" class="badge text-bg-danger"></span>
+              <span id="clasificacion" class="badge text-bg-dark"></span>
+              <span id="formatos" class="badge text-bg-secondary"></span>
+            </div>
+            <h1 id="titulo" class="display-5 fw-bold"></h1>
+            <p id="sinopsis" class="lead text-secondary"></p>
+
+            <dl class="row mt-4 ficha-tecnica">
+              <dt class="col-sm-3">Director</dt>
+              <dd id="director" class="col-sm-9"></dd>
+              <dt class="col-sm-3">Reparto</dt>
+              <dd id="reparto" class="col-sm-9"></dd>
+              <dt class="col-sm-3">Duración</dt>
+              <dd id="duracion" class="col-sm-9"></dd>
+              <dt class="col-sm-3">Idioma</dt>
+              <dd id="idioma" class="col-sm-9"></dd>
+              <dt class="col-sm-3">País</dt>
+              <dd id="pais" class="col-sm-9"></dd>
+            </dl>
+
+            <div class="funciones-detalle rounded-3 p-3 mt-4">
+              <p id="dias" class="fw-bold mb-2"></p>
+              <div id="horarios" class="d-flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mensajeError" class="alert alert-warning border-0 shadow-sm p-4 d-none" role="alert">
+      <h1 class="h4 alert-heading">Película no encontrada</h1>
+      <p>No existe una película asociada al identificador recibido mediante la URL.</p>
+      <hr>
+      <a class="btn btn-dark" href="index.html">Volver a la cartelera</a>
+    </section>
+  </main>
+
+  <script src="js/peliculas.js"></script>
+  <script src="js/detalle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
