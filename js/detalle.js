@@ -20,7 +20,7 @@ const idPelicula = parametros.get("id");
 const peliculaSeleccionada = peliculas.find(pelicula => pelicula.id === idPelicula);
 
 function mostrarDetalle(pelicula) {
-  // TODO 5: completá el contenido utilizando las propiedades de pelicula.
+  
   imagen.src = pelicula.imagen;
   imagen.alt = pelicula.titulo;
   titulo.textContent = pelicula.titulo;

@@ -31,7 +31,7 @@ function mostrarPeliculas(listaPeliculas) {
 
     const enlaceDetalle = tarjeta.querySelector(".enlace-detalle");
 
-    // TODO 1: reemplazá "#" por la dirección detalle.html?id=...
+    
     // El valor del id debe obtenerse desde pelicula.id.
     enlaceDetalle.href = `detalle.html?id=${pelicula.id}`;
 
